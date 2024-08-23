@@ -1,38 +1,171 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Caveat:wght@400..700&family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Edu+VIC+WA+NT+Beginner:wght@400..700&family=Foldit:wght@100..900&family=Ga+Maamli&family=Jersey+10&family=Kalnia+Glaze:wght@100..700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=New+Amsterdam&family=PT+Sans+Narrow:wght@400;700&family=Playwrite+DE+Grund:wght@100..400&family=Playwrite+FR+Moderne:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Grotesk:wght@300..700&display=swap');
+
+.App{
+  margin: auto;
+  align-items: center;
+  font-family: 'Playwrite France Moderne';
+  background-color: #f2c9d1;
+}
+h1{
+  font-size: 3rem;
+  font-family: 'Ga Maamli';
+  margin: 3rem 45%;
+}
+
+.input-form {
+  display: grid;
+  grid-template-columns:repeat(2, 1fr);
+  margin: 1rem 25%;
+  
+  justify-content: space-around;
+  gap: 25px;
+}
+input {
+  border-radius: 10px;
+  background-color: #fff;
+  height: 50px;
+  width: 20rem;
+  color: #000;
+}
+button{
+  border-radius: 10px;
+  background-color: #fff;
+  height: 50px;
+  width: 20rem;
+  background-color: #50bcdd;
+  margin:2px 46%;
+}
+.input-container h2 {
+  font-family:'Edu VIC WA NT Beginner';
+  margin: 2rem 32%;
+}
+.card-wrapper{
+padding: 3rem;
+
+
+}
+.card-div{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 25px; 
+}
+.card-container {
+  font-family: 'Playwrite Deutschland Grundschrift';
+  font-weight: 900;
+  height: 400px;
+  width: 500px;
+  border: 5px solid #fff;
+  border-radius: 5px;
+  padding: 10px;
+  background-image: url(./utils/flower2.jpg);
+  color: #fff;
+}
+.card-container h3 {
   text-align: center;
+  margin: 5px;
+}
+.card-container p {
+  font-size: 2rem;
+  font-family: 'Caveat';
+}
+.card-container span {
+margin-left: 60%;
+}
+.card-container h6 {
+  align-self: last baseline;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.footer-section {
+  height: 10vh;
+  width: auto;
+  background-color:#a18585;
+  font-weight: 400;
+  text-align: center;
+  color: #000;
+  font-weight: bold;
+  font-family: 'Edu VIC WA NT Beginner';
+  position: relative;
+  user-select: none ;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.about-me,
+.contacts,
+.links {
   display: flex;
   flex-direction: column;
   align-items: center;
+  list-style: none;
+}
+
+
+.media {
+  align-items:baseline;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+section {
+  display: flex;
+  flex-direction: row;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: space-around;
+  max-width: 1000px;
+  padding: 150px;
 }
 
-.App-link {
-  color: #61dafb;
+.reflection {
+  text-align: center;
+  font-size: 50px;
+  font-weight: 500;
+  font-family: "Poppins";
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  color: #202020;
+  margin-top: 100px;
+  -webkit-box-reflect: below -60px linear-gradient(transparent, rgb(93, 90, 90))
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.center {
+  margin-top: 2rem;
+  position:absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.slider {
+  color: #fff;
+  font-size: 36px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+}
+.slide{
+  overflow: hidden;
+  height: 50px ;
+  background: #e06666;
+}
+.slide div div {
+  display:inline-block;
+  color:#fff;
+  background: #e06666;
+  padding: 4px 12px;
+  border-radius: 2px;
+  margin-bottom: 15px;
+}
+
+.slide div:nth-child(1){
+  animation: animate 4s linear infinite;
+}
+@keyframes animate {
+  0% {margin-top: -270px}
+  5% {margin-top: -270px}
+  15% {margin-top: -180px}
+  33% {margin-top: -180px}
+  38% {margin-top: -90px}
+  66% {margin-top: -90px}
+  71% {margin-top: 0px}
+  100%{margin-top: -270px}
+
 }
